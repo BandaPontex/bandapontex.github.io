@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda di Pontedecimo, concerto 6 gennaio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            background-color: #1c1c1c;
+            color: white;
+            font-family: 'Lora', serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin-top: 20px;
+            flex: 1;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .logos img {
+            max-height: 50px;
+            margin: 0 15px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin: 15px 0;
+        }
+
+        .titolo {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .sottotitolo {
+            font-family: 'Lora', serif;
+            font-size: 1.0rem;
+            margin: 10px 0;
+        }
+
+        .descrizione {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            margin: 12px 0;
+            font-style: italic;
+        }
+
+        .program {
+            margin-top: 30px;
+        }
+
+        .program-item {
+            background-color: transparent;
+            border: none;
+            margin: 10px 0;
+        }
+
+        .opera {
+            font-weight: bold;
+        }
+
+        .composer {
+            font-style: italic;
+        }
+
+        .performer {
+            display: block;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: white;
+        }
+
+        .social-links img {
+            max-height: 40px;
+        }
+
+
+
+            /* Separator style for a more elegant look */
+    .separator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .separator-line {
+        flex-grow: 1;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #ffffff, transparent);
+    }
+
+    .separator-icon {
+        font-size: 1.2rem;
+        color: #ffffff;
+        padding: 0 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logos">
+            <img src="media/logo_banda.png" alt="Logo Banda Musicale di Pontedecimo">
+        </div>
+        <div class="separator">
+            <div class="separator-line"></div>
+        </div>
+
+        <div>
+            <p class="titolo">Concerto 17 maggio dell'Orchestra di Fiati Città di Levanto</p>
+            <p class="sottotitolo">Convento Frati Cappuccini, Pontedecimo ore 21:00</p>
+            <p class="descrizione">Nell’anno del suo 145º di fondazione, la Banda Musicale della S.O.C. N.S. della Guardia di Genova Pontedecimo inaugura i festeggiamenti con una serata speciale presso il Convento dei Frati Cappuccini di Genova Pontedecimo.
+                L’evento sarà impreziosito dall’esibizione dell’Orchestra di Fiati “Città di Levanto”, nata dall’iniziativa di un gruppo di musicisti locali guidati dal Maestro Andrea Bracco - compagno di studi del nostro Presidente Alberto Farnatale - presso il Conservatorio “N. Paganini” di Genova, sotto la guida del Maestro Elia Savino.
+                Il programma musicale promette emozioni per tutte le età, in una serata all’insegna della musica, dell’amicizia e della condivisione.
+                La Banda Musicale di Pontedecimo sarà poi ospite a Levanto il prossimo 29 giugno, per un concerto in riva al mare, a suggellare questo scambio musicale e umano.
+                
+                <br>La serata ha anche uno scopo benefico: le offerte raccolte saranno destinate al restauro del quadro dedicato a San Felice da Cantalice.
+                </p>
+            <p class="descrizione">Presto disponibile il programma della serata</p>
+            <div class="separator">
+            <div class="separator-line"></div>
+        </div>
+        <div class="program">
+            <!-- <div class="program-item">
+                <span class="opera">March in Mib maggiore WAB 116</span>
+                <span class="composer">A. Bruckner, arr. A. Simbeni</span>
+            </div>
+            <div class="program-item">
+                <span class="opera">First suite in Mib</span>
+                <span class="composer">G. Holst, arr. R. Longfield</span>
+            </div>
+            <div class="program-item">
+                <span class="opera">A Celtic Christmas</span>
+                <span class="composer">J. L. Hosay</span>
+            </div>
+            <div class="program-item">
+                <span class="opera">A Song for Japan</span>
+                <span class="composer">S. Verhelst</span>
+            </div>
+            <div class="program-item">
+                <span class="opera">Encanto</span>
+                <span class="composer">Lin-M. Miranda, arr. P. Murtha</span>
+            </div>
+            <div class="program-item">
+                <span class="opera">Pirate of the Caribbean</span>
+                <span class="composer">K. Badelt, arr. J. Wasson</span>
+            </div>
+            <div class="program-item">
+                <span class="opera">Moment for Morricone</span>
+                <span class="composer">E. Morricone, arr. J. de Meij</span>
+            </div>
+            <div class="program-item">
+                <span class="opera">Rudolph, the red-nosed reindeer</span>
+                <span class="composer">J. Marks, arr. N. Iwai</span>
+            </div> -->
+        </div>
+        <div class="separator">
+            <div class="separator-line"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Sezione dei social media a sinistra -->
+                <div class="col-md-6 text-center text-md-start">
+                    <p>Scopri di più sulla Banda di Pontedecimo</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/bandapontex/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/banda_musicale_pontex/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Sezione per il supporto con il pulsante a destra -->
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Supporta la Banda Musicale di Pontedecimo</p>
+                    <a href="https://www.buymeacoffee.com/organicobap"><img src="https://img.buymeacoffee.com/button-api/?text=Lascia un offerta&emoji=🎶&slug=organicobap&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" /></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
